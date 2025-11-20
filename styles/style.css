@@ -169,6 +169,8 @@ main {
   border: 2px solid #000;
   background-color: transparent;
   margin: 50px 34px 102px 35px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer_title {
@@ -179,11 +181,6 @@ main {
   line-height: 90%;
   letter-spacing: 0%;
   vertical-align: middle;
-}
-
-.footer_but {
-  display: flex;
-  flex-direction: column;
 }
 
 .dialog {
@@ -241,7 +238,7 @@ main {
   text-transform: uppercase;
 }
 
-.post_image {
+.post_image1 {
   filter: sepia(0.1);
 }
 
