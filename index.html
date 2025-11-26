@@ -474,20 +474,21 @@
       onclick="document.getElementById('dialog').showModal();"
       class="footer_but"
     >
-      <img class="flop" src="/svg/floppy.svg" alt="Иконка дискеты" />
+      <img class="flop" src="./svg/floppy.svg" alt="Иконка дискеты" />
       <span class="footer_title">Сохранить на память</span>
     </button>
-
     <dialog id="dialog" class="dialog">
-      <div class="from">
-        <img class="flop2" src="/svg/floppy.svg" alt="Иконка дискеты" />
-        <span class="footer_title2">Вставьте дискеты, чтобы сохранить</span>
+      <div class="dialog__content">
+        <div class="dialog__header">
+          <img class="flop2" src="./svg/floppy.svg" alt="Иконка дискеты" />
+          <span class="dialog__title">Вставьте дискету, чтобы продолжить</span>
+        </div>
+        <form method="dialog">
+          <button class="button dialog__button" type="submit">
+            <span class="button__text">OK</span>
+          </button>
+        </form>
       </div>
-      <form method="dialog">
-        <button class="button dialog__ok-button fot_but" type="submit">
-          <span class="button__text">OK</span>
-        </button>
-      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
