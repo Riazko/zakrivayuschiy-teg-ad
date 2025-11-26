@@ -50,6 +50,14 @@
   text-transform: uppercase;
 }
 
+@supports ((text-stroke: 1px #000) or (-webkit-text-stroke: 1px #000)) {
+  .header_title1 {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    text-stroke: 1px #000;
+  }
+}
+
 .post {
   border: 2.5px solid #000;
   overflow: hidden;
