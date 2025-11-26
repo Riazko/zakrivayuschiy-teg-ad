@@ -5,7 +5,6 @@
   font-variation-settings: "wght" 400;
   width: 375px;
   height: 7443px;
-  background-image: url(../images/background.png);
   background-repeat: no-repeat;
   justify-self: center;
   background-position-x: center;
@@ -101,14 +100,6 @@ p {
   gap: 12px;
   margin-left: 177px;
   margin-bottom: 25px;
-}
-
-.card__like-button {
-  width: 130px;
-  height: 38px;
-  background-color: transparent;
-  border: 2px solid #000;
-  animation: sparks-opacity;
 }
 
 .like-icon {
@@ -321,6 +312,8 @@ main {
     background: transparent;
     cursor: pointer;
     transition: color 0.3s ease;
+    width: 130px;
+    height: 38px;
 }
 
 .card__like-button .button__text {
