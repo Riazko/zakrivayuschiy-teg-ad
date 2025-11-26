@@ -1,70 +1,27 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-
-/* Анимации для сердца */
-.like-icon .heart {
-  transform-origin: center;
+@keyframes beat {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.25;
+    }
 }
 
-.like-icon .sparks {
-  opacity: 0;
+@keyframes spark {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.like-icon.is-liked .heart {
-  animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
+.like-icon.is-liked {
+    animation: beat 0.3s ease-in 0.1s 1;
+    transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-opacity 0.3s ease-in 0.3s 1 alternate;
-}
-
-@keyframes likef {
-  0% {
-    background: src="./svg/heart.svg";
-  }
-  20% {
-    background: src=".\svg\Property 1=starting.svg";
-  }
-  40% {
-    background: src=".\svg\Property 1=sparkles.svg";
-  }
-  60% {
-    background: src=".\svg\Property 1=starting.svg";
-  }
-  80% {
-    background: src=".\svg\Property 1=starting.svg";
-  }
-  100% {
-    background: src=".\svg\Property 1=starting.svg";
-  }
-}
-
-@keyframes heart-scale {
-  from {
-    transform: scale(1);
-    fill: #000;
-  }
-  to {
-    transform: scale(1.1);
-    fill: #f00;
-  }
-}
-
-@keyframes sparks-opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    animation: spark 0.3s ease-in 0.3s 1;
 }
 
