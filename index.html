@@ -469,19 +469,24 @@
         </div>
       </div>
     </main>
-    <button type="button" class="button save_button" onclick="document.getElementById('dialog').showModal()">
-        <svg viewBox="0 0 39 39" width="21" height="21">
-          <use href="./svg/floppy.svg#floppy" />
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </main>
+    <button
+      type="button"
+      onclick="document.getElementById('dialog').showModal();"
+      class="footer_but"
+    >
+      <img class="flop" src="/svg/floppy.svg" alt="Иконка дискеты" />
+      <span class="footer_title">Сохранить на память</span>
+    </button>
     <dialog id="dialog" class="dialog">
-      <svg viewBox="0 0 39 39" width="39" height="39">
-        <use href="./svg/floppy.svg#floppy" />
-      </svg>
-      <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-      <button type="button" onclick="document.getElementById('dialog').close()" class="button dialog__close-button">
+      <div class="from">
+        <img class="flop2" src="/svg/floppy.svg" alt="Иконка дискеты" />
+        <span class="footer_title2">Вставьте дискеты, чтобы сохранить</span>
+      </div>
+      <button
+        type="button"
+        onclick="document.getElementById('dialog').close();"
+        class="button dialog__ok-button fot_but"
+      >
         <span class="button__text">OK</span>
       </button>
     </dialog>
